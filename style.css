@@ -1,0 +1,209 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #f8f9fa;
+    color: #212529;
+    padding: 20px;
+  }
+  
+  /* Kontener na treść */
+  .container {
+    max-width: 900px;
+    margin: auto;
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+  
+  /* Nagłówki */
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #0d6efd;
+    border-bottom: 2px solid #0d6efd;
+    padding-bottom: 10px;
+  }
+  
+  h2 {
+    font-size: 1.8rem;
+    color: #0d6efd;
+    margin-top: 40px;
+    margin-bottom: 15px;
+  }
+  
+  h3 {
+    font-size: 1.4rem;
+    color: #495057;
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+  
+  /* Paragrafy i tekst */
+  p {
+    margin-bottom: 16px;
+    font-size: 1.05rem;
+  }
+  
+  b {
+    color: #212529;
+  }
+  
+  /* Listy */
+  ul {
+    margin-left: 20px;
+    margin-bottom: 20px;
+  }
+  
+  ul li {
+    margin-bottom: 8px;
+  }
+  
+  /* Linki (jeśli chcesz dodać np. przyciski później) */
+  a {
+    color: #0d6efd;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Responsywność */
+  @media (max-width: 768px) {
+    .container {
+      padding: 20px;
+    }
+  
+    h1 {
+      font-size: 2rem;
+    }
+  
+    h2 {
+      font-size: 1.5rem;
+    }
+  
+    p {
+      font-size: 1rem;
+    }
+  }
+/* Layout: Sidebar + Główna zawartość */
+body {
+    display: flex;
+    min-height: 100vh;
+  }
+  
+  /* Sidebar */
+  .sidebar {
+    width: 220px;
+    background-color: #0d6efd;
+    color: white;
+    padding: 30px 20px;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .sidebar-logo {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+  }
+  
+  .sidebar-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .sidebar-links li {
+    margin-bottom: 15px;
+  }
+  
+  .sidebar-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    display: block;
+    padding: 8px 12px;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .sidebar-links a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  
+  /* Treść obok menu */
+  .content {
+    flex-grow: 1;
+    padding: 40px;
+    background-color: #f8f9fa;
+  }
+  
+  /* Smooth scroll */
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  /* Responsywność – menu boczne znika i pojawia się u góry */
+  @media (max-width: 768px) {
+    body {
+      flex-direction: column;
+    }
+  
+    .sidebar {
+      width: 100%;
+      height: auto;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      padding: 15px 20px;
+    }
+  
+    .sidebar-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+  
+    .sidebar-links li {
+      margin-bottom: 0;
+    }
+  
+    .sidebar-links a {
+      padding: 6px 10px;
+      font-size: 0.9rem;
+    }
+  
+    .content {
+      padding: 20px;
+    }
+  }
+    
+
+  /* Styl przycisku */
+#btn {
+    background-color: #333; /* Tło przycisku */
+    color: white;           /* Kolor tekstu */
+    font-size: 18px;        /* Rozmiar tekstu */
+    padding: 10px 20px;     /* Wewnętrzne marginesy */
+    border: none;           /* Brak obramowania */
+    border-radius: 5px;     /* Zaokrąglone rogi */
+    cursor: pointer;        /* Kursor zmienia się na wskaźnik */
+    transition: background-color 0.3s; /* Efekt przejścia przy najechaniu */
+}
+
+#btn:hover {
+    background-color: #575757; /* Zmiana koloru tła przy najechaniu */
+}
